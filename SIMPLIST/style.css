@@ -1,0 +1,1469 @@
+@charset "UTF-8";
+/* ---------------------------------------------------------------------- *
+ *                                                                        *
+ *                                                                        *
+ *                  + Berryz WebShare "SIMPLIST" theme +                  *
+ *          Copyright (c) 2015, 2018  Mayu Laierlence (Minacle).          *
+ *                                                                        *
+ *                                                                        *
+ * ---------------------------------------------------------------------- *
+ *                                                                        *
+ *                                                                        *
+ *                        The Artistic License 2.0                        *
+ *                                                                        *
+ *             Copyright (c) 2000-2006, The Perl Foundation.              *
+ *                                                                        *
+ *      Everyone is permitted to copy and distribute verbatim copies      *
+ *       of this license document, but changing it is not allowed.        *
+ *                                                                        *
+ * Preamble                                                               *
+ *                                                                        *
+ * This license establishes the terms under which a given free software   *
+ * Package may be copied, modified, distributed, and/or redistributed.    *
+ * The intent is that the Copyright Holder maintains some artistic        *
+ * control over the development of that Package while still keeping the   *
+ * Package available as open source and free software.                    *
+ *                                                                        *
+ * You are always permitted to make arrangements wholly outside of this   *
+ * license directly with the Copyright Holder of a given Package.  If the *
+ * terms of this license do not permit the full use that you propose to   *
+ * make of the Package, you should contact the Copyright Holder and seek  *
+ * a different licensing arrangement.                                     *
+ *                                                                        *
+ * Definitions                                                            *
+ *                                                                        *
+ *     "Copyright Holder" means the individual(s) or organization(s)      *
+ *     named in the copyright notice for the entire Package.              *
+ *                                                                        *
+ *     "Contributor" means any party that has contributed code or other   *
+ *     material to the Package, in accordance with the Copyright Holder's *
+ *     procedures.                                                        *
+ *                                                                        *
+ *     "You" and "your" means any person who would like to copy,          *
+ *     distribute, or modify the Package.                                 *
+ *                                                                        *
+ *     "Package" means the collection of files distributed by the         *
+ *     Copyright Holder, and derivatives of that collection and/or of     *
+ *     those files. A given Package may consist of either the Standard    *
+ *     Version, or a Modified Version.                                    *
+ *                                                                        *
+ *     "Distribute" means providing a copy of the Package or making it    *
+ *     accessible to anyone else, or in the case of a company or          *
+ *     organization, to others outside of your company or organization.   *
+ *                                                                        *
+ *     "Distributor Fee" means any fee that you charge for Distributing   *
+ *     this Package or providing support for this Package to another      *
+ *     party.  It does not mean licensing fees.                           *
+ *                                                                        *
+ *     "Standard Version" refers to the Package if it has not been        *
+ *     modified, or has been modified only in ways explicitly requested   *
+ *     by the Copyright Holder.                                           *
+ *                                                                        *
+ *     "Modified Version" means the Package, if it has been changed, and  *
+ *     such changes were not explicitly requested by the Copyright        *
+ *     Holder.                                                            *
+ *                                                                        *
+ *     "Original License" means this Artistic License as Distributed with *
+ *     the Standard Version of the Package, in its current version or as  *
+ *     it may be modified by The Perl Foundation in the future.           *
+ *                                                                        *
+ *     "Source" form means the source code, documentation source, and     *
+ *     configuration files for the Package.                               *
+ *                                                                        *
+ *     "Compiled" form means the compiled bytecode, object code, binary,  *
+ *     or any other form resulting from mechanical transformation or      *
+ *     translation of the Source form.                                    *
+ *                                                                        *
+ *                                                                        *
+ * Permission for Use and Modification Without Distribution               *
+ *                                                                        *
+ * (1)  You are permitted to use the Standard Version and create and use  *
+ * Modified Versions for any purpose without restriction, provided that   *
+ * you do not Distribute the Modified Version.                            *
+ *                                                                        *
+ *                                                                        *
+ * Permissions for Redistribution of the Standard Version                 *
+ *                                                                        *
+ * (2)  You may Distribute verbatim copies of the Source form of the      *
+ * Standard Version of this Package in any medium without restriction,    *
+ * either gratis or for a Distributor Fee, provided that you duplicate    *
+ * all of the original copyright notices and associated disclaimers.  At  *
+ * your discretion, such verbatim copies may or may not include a         *
+ * Compiled form of the Package.                                          *
+ *                                                                        *
+ * (3)  You may apply any bug fixes, portability changes, and other       *
+ * modifications made available from the Copyright Holder.  The resulting *
+ * Package will still be considered the Standard Version, and as such     *
+ * will be subject to the Original License.                               *
+ *                                                                        *
+ *                                                                        *
+ * Distribution of Modified Versions of the Package as Source             *
+ *                                                                        *
+ * (4)  You may Distribute your Modified Version as Source (either gratis *
+ * or for a Distributor Fee, and with or without a Compiled form of the   *
+ * Modified Version) provided that you clearly document how it differs    *
+ * from the Standard Version, including, but not limited to, documenting  *
+ * any non-standard features, executables, or modules, and provided that  *
+ * you do at least ONE of the following:                                  *
+ *                                                                        *
+ *     (a)  make the Modified Version available to the Copyright Holder   *
+ *     of the Standard Version, under the Original License, so that the   *
+ *     Copyright Holder may include your modifications in the Standard    *
+ *     Version.                                                           *
+ *                                                                        *
+ *     (b)  ensure that installation of your Modified Version does not    *
+ *     prevent the user installing or running the Standard Version. In    *
+ *     addition, the Modified Version must bear a name that is different  *
+ *     from the name of the Standard Version.                             *
+ *                                                                        *
+ *     (c)  allow anyone who receives a copy of the Modified Version to   *
+ *     make the Source form of the Modified Version available to others   *
+ *     under                                                              *
+ *                                                                        *
+ *         (i)  the Original License or                                   *
+ *                                                                        *
+ *         (ii)  a license that permits the licensee to freely copy,      *
+ *         modify and redistribute the Modified Version using the same    *
+ *         licensing terms that apply to the copy that the licensee       *
+ *         received, and requires that the Source form of the Modified    *
+ *         Version, and of any works derived from it, be made freely      *
+ *         available in that license fees are prohibited but Distributor  *
+ *         Fees are allowed.                                              *
+ *                                                                        *
+ *                                                                        *
+ * Distribution of Compiled Forms of the Standard Version                 *
+ * or Modified Versions without the Source                                *
+ *                                                                        *
+ * (5)  You may Distribute Compiled forms of the Standard Version without *
+ * the Source, provided that you include complete instructions on how to  *
+ * get the Source of the Standard Version.  Such instructions must be     *
+ * valid at the time of your distribution.  If these instructions, at any *
+ * time while you are carrying out such distribution, become invalid, you *
+ * must provide new instructions on demand or cease further distribution. *
+ * If you provide valid instructions or cease distribution within thirty  *
+ * days after you become aware that the instructions are invalid, then    *
+ * you do not forfeit any of your rights under this license.              *
+ *                                                                        *
+ * (6)  You may Distribute a Modified Version in Compiled form without    *
+ * the Source, provided that you comply with Section 4 with respect to    *
+ * the Source of the Modified Version.                                    *
+ *                                                                        *
+ *                                                                        *
+ * Aggregating or Linking the Package                                     *
+ *                                                                        *
+ * (7)  You may aggregate the Package (either the Standard Version or     *
+ * Modified Version) with other packages and Distribute the resulting     *
+ * aggregation provided that you do not charge a licensing fee for the    *
+ * Package.  Distributor Fees are permitted, and licensing fees for other *
+ * components in the aggregation are permitted. The terms of this license *
+ * apply to the use and Distribution of the Standard or Modified Versions *
+ * as included in the aggregation.                                        *
+ *                                                                        *
+ * (8) You are permitted to link Modified and Standard Versions with      *
+ * other works, to embed the Package in a larger work of your own, or to  *
+ * build stand-alone binary or bytecode versions of applications that     *
+ * include the Package, and Distribute the result without restriction,    *
+ * provided the result does not expose a direct interface to the Package. *
+ *                                                                        *
+ *                                                                        *
+ * Items That are Not Considered Part of a Modified Version               *
+ *                                                                        *
+ * (9) Works (including, but not limited to, modules and scripts) that    *
+ * merely extend or make use of the Package, do not, by themselves, cause *
+ * the Package to be a Modified Version.  In addition, such works are not *
+ * considered parts of the Package itself, and are not subject to the     *
+ * terms of this license.                                                 *
+ *                                                                        *
+ *                                                                        *
+ * General Provisions                                                     *
+ *                                                                        *
+ * (10)  Any use, modification, and distribution of the Standard or       *
+ * Modified Versions is governed by this Artistic License. By using,      *
+ * modifying or distributing the Package, you accept this license. Do not *
+ * use, modify, or distribute the Package, if you do not accept this      *
+ * license.                                                               *
+ *                                                                        *
+ * (11)  If your Modified Version has been derived from a Modified        *
+ * Version made by someone other than you, you are nevertheless required  *
+ * to ensure that your Modified Version complies with the requirements of *
+ * this license.                                                          *
+ *                                                                        *
+ * (12)  This license does not grant you the right to use any trademark,  *
+ * service mark, tradename, or logo of the Copyright Holder.              *
+ *                                                                        *
+ * (13)  This license includes the non-exclusive, worldwide,              *
+ * free-of-charge patent license to make, have made, use, offer to sell,  *
+ * sell, import and otherwise transfer the Package with respect to any    *
+ * patent claims licensable by the Copyright Holder that are necessarily  *
+ * infringed by the Package. If you institute patent litigation           *
+ * (including a cross-claim or counterclaim) against any party alleging   *
+ * that the Package constitutes direct or contributory patent             *
+ * infringement, then this Artistic License to you shall terminate on the *
+ * date that such litigation is filed.                                    *
+ *                                                                        *
+ * (14)  Disclaimer of Warranty:                                          *
+ * THE PACKAGE IS PROVIDED BY THE COPYRIGHT HOLDER AND CONTRIBUTORS "AS   *
+ * IS' AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES. THE IMPLIED         *
+ * WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR    *
+ * NON-INFRINGEMENT ARE DISCLAIMED TO THE EXTENT PERMITTED BY YOUR LOCAL  *
+ * LAW. UNLESS REQUIRED BY LAW, NO COPYRIGHT HOLDER OR CONTRIBUTOR WILL   *
+ * BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL       *
+ * DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THE PACKAGE, EVEN IF      *
+ * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.                             *
+ *                                                                        *
+ *                                                                        *
+ * ---------------------------------------------------------------------- *
+ *                                                                        *
+ *                                                                        *
+ *                                               ORIGINAL COPYRIGHT TEXT. *
+ *                                                                        *
+ *         Berryz WebShare "SIMPLIST" theme by Mayu Laierlence (Minacle). *
+ *         only for Project MS (PJMS). Happy birthday <3     2015. 1. 17. *
+ *                                     SIMPLIST/style.sass ~ 2015. 1. 28. *
+ *                                                                        *
+ *                                                                        *
+ * ---------------------------------------------------------------------- */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "Meiryo UI", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", "맑은 고딕", "Malgun Gothic", "나눔고딕", "NanumGothic", sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  cursor: default;
+  z-index: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-text-size-adjust: 100%;
+  -khtml-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+body > .background {
+  background-color: #7f7f7f;
+  background-position: 50% 20%;
+  background-size: cover;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+body > .glass {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+body .frame, body .frameborder {
+  width: 100%;
+  height: calc(100% - 140px);
+  position: fixed;
+  top: 112px;
+  z-index: 50;
+}
+body .frameborder {
+  margin-left: -1px;
+  top: 64px;
+  height: calc(100% - 92px);
+}
+body.dark {
+  background-color: black;
+  background-size: 0;
+  background-position: center;
+  background-attachment: fixed;
+  color: rgba(255, 255, 255, 0.8784313725);
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.0039215686);
+}
+body.dark a,
+body.dark *:not(label) > button,
+body.dark label > button {
+  color: rgba(255, 255, 255, 0.9960784314);
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.9960784314);
+}
+body.dark a:hover,
+body.dark *:not(label) > button:hover,
+body.dark label:hover > button {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.9960784314);
+  -webkit-animation: light-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -khtml-animation: light-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -moz-animation: light-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -ms-animation: light-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -o-animation: light-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  animation: light-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+}
+body.dark input[type=text] {
+  border-bottom: 3px double rgba(255, 255, 255, 0.42);
+  color: rgba(255, 255, 255, 0.8784313725);
+}
+body.dark .inverse a,
+body.dark .inverse :not(label) > button,
+body.dark .inverse label > button {
+  color: rgba(0, 0, 0, 0.9960784314);
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.9960784314);
+}
+body.dark .inverse a:hover,
+body.dark .inverse :not(label) > button:hover,
+body.dark .inverse label:hover > button {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9960784314);
+  -webkit-animation: dark-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -khtml-animation: dark-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -moz-animation: dark-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -ms-animation: dark-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -o-animation: dark-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  animation: dark-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+}
+body.dark .list a:hover {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.9960784314);
+  color: rgba(0, 0, 0, 0.8784313725);
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  -webkit-animation: light-highlight-row 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -khtml-animation: light-highlight-row 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -moz-animation: light-highlight-row 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -ms-animation: light-highlight-row 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -o-animation: light-highlight-row 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  animation: light-highlight-row 0.6s ease-in-out 0.24s infinite alternate-reverse;
+}
+body.dark .list a:hover *:not(label) > button,
+body.dark .list a:hover label > button {
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.8784313725);
+  color: rgba(0, 0, 0, 0.8784313725);
+}
+body.dark .list a:hover *:not(label) > button:hover,
+body.dark .list a:hover label:hover > button {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9960784314);
+  color: rgba(0, 0, 0, 0.9960784314);
+  -webkit-animation: dark-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -khtml-animation: dark-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -moz-animation: dark-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -ms-animation: dark-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -o-animation: dark-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  animation: dark-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+}
+body.dark .list > .contents > *:not(:first-child) {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+body.dark .list > .contents > *:not(:first-child):last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+body.dark .list > .contents > *:not(:first-child):nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.5555555556);
+}
+body.dark .nav .tool .background:nth-child(1n) {
+  background-color: black;
+  border: 1px solid white;
+}
+body.dark .nav .tool .background:nth-child(1n) > .borderfix {
+  background-color: black;
+}
+body.dark .nav .tool.dropdown-opened {
+  background-color: black;
+  border-left: 1px solid white !important;
+  border-right: 1px solid white !important;
+}
+body.dark .nav a:not(.dropdown-content):hover,
+body.dark .nav *:not(label) > button:not(.dropdown-content):hover,
+body.dark .nav label > button:not(.dropdown-content):hover {
+  -webkit-animation: big-light-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -khtml-animation: big-light-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -moz-animation: big-light-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -ms-animation: big-light-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -o-animation: big-light-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  animation: big-light-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+}
+body.dark .message-box {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9960784314);
+}
+body.dark > .glass,
+body.dark .glass-positive,
+body.dark .glass-negative,
+body.dark .list > .contents > *:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.3333333333);
+}
+body.dark .frameborder {
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+body.dark .modal-dim {
+  background-color: rgba(0, 0, 0, 0.7037037037);
+}
+body.dark .modal-window {
+  background-color: black;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+body.dark .modal-window .modal-header {
+  background-color: rgba(0, 0, 0, 0.3333333333);
+}
+body.dark .modal-window .modal-footer {
+  background-color: rgba(0, 0, 0, 0.3333333333);
+}
+body.dark .progress-container {
+  background-color: rgba(255, 255, 255, 0.3333333333);
+}
+body.dark .progress-container > .progress-block {
+  background-color: rgba(255, 255, 255, 0.9960784314);
+}
+body.light {
+  background-color: white;
+  background-size: 0;
+  background-position: center;
+  background-attachment: fixed;
+  color: rgba(0, 0, 0, 0.8784313725);
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.0039215686);
+}
+body.light a,
+body.light *:not(label) > button,
+body.light label > button {
+  color: rgba(0, 0, 0, 0.9960784314);
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.9960784314);
+}
+body.light a:hover,
+body.light *:not(label) > button:hover,
+body.light label:hover > button {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9960784314);
+  -webkit-animation: dark-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -khtml-animation: dark-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -moz-animation: dark-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -ms-animation: dark-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -o-animation: dark-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  animation: dark-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+}
+body.light input[type=text] {
+  border-bottom: 3px double rgba(0, 0, 0, 0.42);
+  color: rgba(0, 0, 0, 0.8784313725);
+}
+body.light .inverse a,
+body.light .inverse :not(label) > button,
+body.light .inverse label > button {
+  color: rgba(255, 255, 255, 0.9960784314);
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.9960784314);
+}
+body.light .inverse a:hover,
+body.light .inverse :not(label) > button:hover,
+body.light .inverse label:hover > button {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.9960784314);
+  -webkit-animation: light-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -khtml-animation: light-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -moz-animation: light-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -ms-animation: light-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -o-animation: light-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  animation: light-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+}
+body.light .list a:hover {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9960784314);
+  color: rgba(255, 255, 255, 0.8784313725);
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  -webkit-animation: dark-highlight-row 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -khtml-animation: dark-highlight-row 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -moz-animation: dark-highlight-row 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -ms-animation: dark-highlight-row 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -o-animation: dark-highlight-row 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  animation: dark-highlight-row 0.6s ease-in-out 0.24s infinite alternate-reverse;
+}
+body.light .list a:hover *:not(label) > button,
+body.light .list a:hover label > button {
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.8784313725);
+  color: rgba(255, 255, 255, 0.8784313725);
+}
+body.light .list a:hover *:not(label) > button:hover,
+body.light .list a:hover label:hover > button {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.9960784314);
+  color: rgba(255, 255, 255, 0.9960784314);
+  -webkit-animation: light-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -khtml-animation: light-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -moz-animation: light-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -ms-animation: light-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -o-animation: light-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  animation: light-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+}
+body.light .list > .contents > *:not(:first-child) {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+body.light .list > .contents > *:not(:first-child):last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+body.light .list > .contents > *:not(:first-child):nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.5555555556);
+}
+body.light .nav .tool .background:nth-child(1n) {
+  background-color: white;
+  border: 1px solid black;
+}
+body.light .nav .tool .background:nth-child(1n) > .borderfix {
+  background-color: white;
+}
+body.light .nav .tool.dropdown-opened {
+  background-color: white;
+  border-left: 1px solid black !important;
+  border-right: 1px solid black !important;
+}
+body.light .nav a:not(.dropdown-content):hover,
+body.light .nav *:not(label) > button:not(.dropdown-content):hover,
+body.light .nav label > button:not(.dropdown-content):hover {
+  -webkit-animation: big-dark-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -khtml-animation: big-dark-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -moz-animation: big-dark-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -ms-animation: big-dark-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  -o-animation: big-dark-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+  animation: big-dark-glow 0.6s ease-in-out 0.24s infinite alternate-reverse;
+}
+body.light .message-box {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.9960784314);
+}
+body.light > .glass,
+body.light .glass-positive,
+body.light .glass-negative,
+body.light .list > .contents > *:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.3333333333);
+}
+body.light .frameborder {
+  border-left: 1px solid rgba(0, 0, 0, 0.4);
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+}
+body.light .modal-dim {
+  background-color: rgba(255, 255, 255, 0.7037037037);
+}
+body.light .modal-window {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+body.light .modal-window .modal-header {
+  background-color: rgba(255, 255, 255, 0.3333333333);
+}
+body.light .modal-window .modal-footer {
+  background-color: rgba(255, 255, 255, 0.3333333333);
+}
+body.light .progress-container {
+  background-color: rgba(0, 0, 0, 0.3333333333);
+}
+body.light .progress-container > .progress-block {
+  background-color: rgba(0, 0, 0, 0.9960784314);
+}
+
+a,
+button,
+label {
+  color: inherit;
+  text-decoration: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: text-shadow 0.24s, color 0.24s;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+}
+
+input[type=text] {
+  padding: 4px 0;
+  border: none;
+  background: none;
+  font-size: inherit;
+  border-radius: 0;
+}
+
+i.fa {
+  position: relative;
+}
+
+#layout-root {
+  position: relative;
+  height: 100%;
+  z-index: 100;
+}
+#layout-root #layout-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 64px;
+  z-index: 3000;
+}
+#layout-root #layout-top .nav {
+  width: 100%;
+  border-spacing: 0 1px;
+  border-collapse: separate;
+}
+#layout-root #layout-top .nav > * > * > *:nth-child(1), #layout-root #layout-top .nav > * > * > *:nth-child(3), #layout-root #layout-top .nav > * > * > *:nth-child(4) {
+  width: 64px;
+}
+#layout-root #layout-top .nav > * > * > *:nth-child(2) {
+  max-width: 0;
+}
+#layout-root #layout-top .nav .tool {
+  z-index: 3200;
+  width: 62px;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  outline: 0;
+}
+#layout-root #layout-top .nav .tool .icon {
+  display: block;
+  position: relative;
+  width: 62px;
+  height: 64px;
+  font-size: 54px;
+  line-height: 64px;
+  margin: auto;
+  text-align: center;
+}
+#layout-root #layout-top .nav .tool.dropdown .dropdown-handle {
+  z-index: 3300;
+}
+#layout-root #layout-top .nav .tool.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  max-width: 320px;
+  min-width: 126px;
+  min-height: 18px;
+  margin-left: -1px;
+  top: 64px;
+}
+#layout-root #layout-top .nav .tool.dropdown .dropdown-content .background > .borderfix {
+  position: absolute;
+  width: 62px;
+  height: 1px;
+  top: -1px;
+  font-size: 0;
+}
+#layout-root #layout-top .nav .tool.dropdown .dropdown-content .background > .borderfix.left-0 {
+  left: 0;
+}
+#layout-root #layout-top .nav .tool.dropdown .dropdown-content .background > .borderfix.left-1 {
+  left: 64px;
+}
+#layout-root #layout-top .nav .tool.dropdown .dropdown-content .background > .borderfix.right-0 {
+  right: 0;
+}
+#layout-root #layout-top .nav .tool.dropdown .dropdown-content .background > .borderfix.right-1 {
+  right: 64px;
+}
+#layout-root #layout-top .nav .tool.dropdown .dropdown-content > *:not(.background) {
+  padding: 1px 1px 0 1px;
+  margin: 0 0 -1px 0;
+  position: relative;
+}
+#layout-root #layout-top .nav .tool.dropdown.dropdown-opened .dropdown-content {
+  display: inherit;
+}
+#layout-root #layout-top .nav .path {
+  font-size: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#layout-root #layout-top .nav .path.touchdevice > *, #layout-root #layout-top .nav .path:hover > * {
+  transition: none !important;
+}
+#layout-root #layout-top .nav .path > * {
+  display: inline-block;
+  position: relative;
+  transition: left 0.24s ease-out;
+}
+#layout-root #layout-top .nav .path > * .title {
+  padding-left: 0.3em;
+}
+#layout-root #layout-top .nav .path a::after {
+  padding: 0 0.3em;
+  content: "/";
+}
+#layout-root #layout-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 28px;
+  z-index: 2000;
+}
+#layout-root #layout-bottom a {
+  font-weight: bold;
+  opacity: 0.7;
+}
+#layout-root #layout-bottom > span {
+  display: block;
+  position: relative;
+  width: 100%;
+  line-height: 28px;
+  font-size: 15px;
+}
+#layout-root #layout-bottom > span > span:first-child {
+  padding-left: 0.55em;
+}
+#layout-root #layout-bottom > span > span:not(:first-child)::before {
+  padding: 0 1em;
+  content: "·";
+}
+#layout-root #layout-content {
+  padding: 64px 0 28px 0;
+  width: 100%;
+  z-index: 1000;
+}
+#layout-root #layout-content .message-box {
+  padding: 24px 0;
+  z-index: 1500;
+  text-align: center;
+}
+#layout-root #layout-content .message-box h1 {
+  font-size: 24px;
+  margin: 0.8em 0;
+}
+#layout-root #layout-content .header-container {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  font-weight: bold;
+  z-index: 1500;
+}
+#layout-root #layout-content .header-container .header label {
+  text-align: center;
+}
+#layout-root #layout-content .list {
+  z-index: 1200;
+}
+#layout-root #layout-content .list > * a {
+  transition: text-shadow 0.24s, background-color 0.24s, color 0.24s;
+}
+#layout-root #layout-content .list > * > * > * {
+  padding: 6px;
+  height: 36px;
+  line-height: 18px;
+}
+#layout-root #layout-content .list > * > * > *:nth-child(1), #layout-root #layout-content .list > * > * > *:nth-child(2) {
+  text-align: center;
+  width: 32px;
+}
+#layout-root #layout-content .list > * > * > *:nth-child(3) {
+  text-overflow: ellipsis;
+}
+#layout-root #layout-content .list > * > * > *:nth-child(3) > * {
+  margin-right: 0.4em;
+}
+#layout-root #layout-content .list > * > * > *:nth-child(4) {
+  text-align: right;
+  width: 128px;
+}
+#layout-root #layout-content .list > * > * > *:nth-child(5) {
+  text-align: center;
+  width: 176px;
+}
+
+#modal-root .modal-dim {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5000;
+  opacity: 1;
+  transition: opacity 0.24s;
+}
+#modal-root .modal-dim.collapsed {
+  opacity: 0;
+}
+#modal-root .modal-dim .modal-window {
+  position: absolute;
+  top: 64px;
+  left: 50%;
+  width: 318px;
+  max-height: 356px;
+  margin-left: -160px;
+  overflow: hidden;
+}
+#modal-root .modal-dim .modal-window .modal-header {
+  font-size: 1.4em;
+  font-weight: bolder;
+  text-align: center;
+  padding: 0.8em 0;
+  line-height: 1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+#modal-root .modal-dim .modal-window .modal-content {
+  margin: 3.64em 0 3.24em 0;
+  padding: 0.8em 1.2em;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+#modal-root .modal-dim .modal-window .modal-content > * {
+  width: 100%;
+}
+#modal-root .modal-dim .modal-window .modal-footer {
+  font-size: 1.2em;
+  font-weight: bolder;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  line-height: 1;
+  white-space: nowrap;
+}
+#modal-root .modal-dim .modal-window .modal-footer.modal-button-1 > * {
+  width: 100%;
+}
+#modal-root .modal-dim .modal-window .modal-footer.modal-button-2 > * {
+  width: 50%;
+}
+#modal-root .modal-dim .modal-window .modal-footer.modal-button-3 > * {
+  width: 33.33333%;
+}
+#modal-root .modal-dim .modal-window .modal-footer.modal-button-4 > * {
+  width: 25%;
+}
+#modal-root .modal-dim .modal-window .modal-footer > * {
+  padding: 0.8em 0;
+  display: inline-block;
+}
+
+#hidden-root,
+.collapsed {
+  display: none !important;
+}
+
+.fill {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.glass-dark {
+  background-color: rgba(0, 0, 0, 0.3333333333);
+}
+
+.glass-light {
+  background-color: rgba(255, 255, 255, 0.3333333333);
+}
+
+.hidden {
+  visibility: hidden !important;
+}
+
+.layout-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto !important;
+}
+
+.notransit {
+  transition: none;
+}
+
+.table {
+  display: table;
+  position: relative;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.table > * {
+  display: table-row-group;
+}
+.table > * > * {
+  display: table-row;
+}
+.table > * > * > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.user-popup > *,
+.upload-popup > *,
+.plugin-popup > * {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+.user-popup > * div,
+.upload-popup > * div,
+.plugin-popup > * div {
+  padding: 12px 20px;
+}
+
+.progress-container {
+  position: relative;
+  padding: 0;
+  height: 0.5em;
+}
+.progress-container > .progress-block {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 783px) {
+  body {
+    font-size: 14px;
+  }
+  body .frame, body .frameborder {
+    height: calc(100% - 110px);
+    top: 86px;
+  }
+  body .frameborder {
+    margin-left: -1px;
+    top: 48px;
+    height: calc(100% - 72px);
+  }
+
+  #layout-root #layout-top {
+    height: 48px;
+  }
+  #layout-root #layout-top .nav > * > * > *:nth-child(1), #layout-root #layout-top .nav > * > * > *:nth-child(3), #layout-root #layout-top .nav > * > * > *:nth-child(4) {
+    width: 48px;
+  }
+  #layout-root #layout-top .nav .tool {
+    width: 46px;
+  }
+  #layout-root #layout-top .nav .tool .icon {
+    width: 46px;
+    height: 48px;
+    font-size: 41px;
+    line-height: 48px;
+  }
+  #layout-root #layout-top .nav .tool.dropdown .dropdown-content {
+    min-width: 94px;
+    min-height: 16px;
+    top: 48px;
+  }
+  #layout-root #layout-top .nav .tool.dropdown .dropdown-content .background > .borderfix {
+    width: 46px;
+  }
+  #layout-root #layout-top .nav .tool.dropdown .dropdown-content .background > .borderfix.left-0 {
+    left: 0;
+  }
+  #layout-root #layout-top .nav .tool.dropdown .dropdown-content .background > .borderfix.left-1 {
+    left: 48px;
+  }
+  #layout-root #layout-top .nav .tool.dropdown .dropdown-content .background > .borderfix.right-0 {
+    right: 0;
+  }
+  #layout-root #layout-top .nav .tool.dropdown .dropdown-content .background > .borderfix.right-1 {
+    right: 48px;
+  }
+  #layout-root #layout-top .nav .path {
+    font-size: 30px;
+    line-height: 48px;
+  }
+  #layout-root #layout-bottom {
+    height: 24px;
+  }
+  #layout-root #layout-bottom > span {
+    line-height: 24px;
+    font-size: 13px;
+  }
+  #layout-root #layout-content {
+    padding: 48px 0 24px 0;
+  }
+  #layout-root #layout-content .message-box {
+    padding: 21px 0;
+    height: calc(100% - 72px);
+    top: 48px;
+  }
+  #layout-root #layout-content .message-box h1 {
+    font-size: 21px;
+  }
+  #layout-root #layout-content .list > * > * > * {
+    padding: 4px;
+    height: 30px;
+    line-height: 15px;
+  }
+  #layout-root #layout-content .list > * > * > *:nth-child(1), #layout-root #layout-content .list > * > * > *:nth-child(2) {
+    width: 28px;
+  }
+  #layout-root #layout-content .list > * > * > *:nth-child(4) {
+    width: 112px;
+  }
+  #layout-root #layout-content .list > * > * > *:nth-child(5) {
+    width: 154px;
+  }
+
+  .user-popup > *,
+  .upload-popup > *,
+  .plugin-popup > * {
+    font-size: 16px;
+  }
+}
+@media (max-width: 495px) {
+  .visible-xs-block {
+    display: block;
+  }
+  .visible-xs-inline {
+    display: inline;
+  }
+  .visible-xs-inline-block {
+    display: inline-block;
+  }
+
+  .hidden-xs {
+    visibility: hidden;
+  }
+
+  .collapsed-xs {
+    display: none;
+  }
+
+  body .frame, body .frameborder,
+  body .frameborder {
+    max-width: 494px;
+  }
+}
+@media (min-width: 496px) and (max-width: 783px) {
+  .visible-sm-block {
+    display: block;
+  }
+  .visible-sm-inline {
+    display: inline;
+  }
+  .visible-sm-inline-block {
+    display: inline-block;
+  }
+
+  .hidden-sm {
+    visibility: hidden;
+  }
+
+  .collapsed-sm {
+    display: none;
+  }
+
+  .layout-container {
+    max-width: 782px;
+  }
+
+  body .frame, body .frameborder,
+  body .frameborder {
+    max-width: 782px;
+  }
+}
+@media (min-width: 784px) and (max-width: 1295px) {
+  .visible-md-block {
+    display: block;
+  }
+  .visible-md-inline {
+    display: inline;
+  }
+  .visible-md-inline-block {
+    display: inline-block;
+  }
+
+  .hidden-md {
+    visibility: hidden;
+  }
+
+  .collapsed-md {
+    display: none;
+  }
+
+  .layout-container {
+    max-width: 782px;
+  }
+
+  body .frame, body .frameborder,
+  body .frameborder {
+    max-width: 782px;
+  }
+}
+@media (min-width: 1296px) and (max-width: 1935px) {
+  .visible-lg-block {
+    display: block;
+  }
+  .visible-lg-inline {
+    display: inline;
+  }
+  .visible-lg-inline-block {
+    display: inline-block;
+  }
+
+  .hidden-lg {
+    visibility: hidden;
+  }
+
+  .collapsed-lg {
+    display: none;
+  }
+
+  .layout-container {
+    max-width: 1294px;
+  }
+
+  body .frame, body .frameborder,
+  body .frameborder {
+    max-width: 1294px;
+  }
+}
+@media (min-width: 1936px) {
+  .visible-xl-block {
+    display: block;
+  }
+  .visible-xl-inline {
+    display: inline;
+  }
+  .visible-xl-inline-block {
+    display: inline-block;
+  }
+
+  .hidden-xl {
+    visibility: hidden;
+  }
+
+  .collapsed-xl {
+    display: none;
+  }
+
+  .layout-container {
+    max-width: 1934px;
+  }
+
+  body .frame, body .frameborder,
+  body .frameborder {
+    max-width: 1934px;
+  }
+}
+@-webkit-keyframes light-glow {
+  from {
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.8784313725);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.9960784314);
+  }
+}
+@-khtml-keyframes light-glow {
+  from {
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.8784313725);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.9960784314);
+  }
+}
+@-moz-keyframes light-glow {
+  from {
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.8784313725);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.9960784314);
+  }
+}
+@-ms-keyframes light-glow {
+  from {
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.8784313725);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.9960784314);
+  }
+}
+@-o-keyframes light-glow {
+  from {
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.8784313725);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.9960784314);
+  }
+}
+@keyframes light-glow {
+  from {
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.8784313725);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.9960784314);
+  }
+}
+@-webkit-keyframes dark-glow {
+  from {
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.8784313725);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.9960784314);
+  }
+}
+@-khtml-keyframes dark-glow {
+  from {
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.8784313725);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.9960784314);
+  }
+}
+@-moz-keyframes dark-glow {
+  from {
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.8784313725);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.9960784314);
+  }
+}
+@-ms-keyframes dark-glow {
+  from {
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.8784313725);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.9960784314);
+  }
+}
+@-o-keyframes dark-glow {
+  from {
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.8784313725);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.9960784314);
+  }
+}
+@keyframes dark-glow {
+  from {
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.8784313725);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.9960784314);
+  }
+}
+@-webkit-keyframes big-light-glow {
+  from {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.9960784314);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8784313725);
+  }
+}
+@-khtml-keyframes big-light-glow {
+  from {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.9960784314);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8784313725);
+  }
+}
+@-moz-keyframes big-light-glow {
+  from {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.9960784314);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8784313725);
+  }
+}
+@-ms-keyframes big-light-glow {
+  from {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.9960784314);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8784313725);
+  }
+}
+@-o-keyframes big-light-glow {
+  from {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.9960784314);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8784313725);
+  }
+}
+@keyframes big-light-glow {
+  from {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.9960784314);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8784313725);
+  }
+}
+@-webkit-keyframes big-dark-glow {
+  from {
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.9960784314);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8784313725);
+  }
+}
+@-khtml-keyframes big-dark-glow {
+  from {
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.9960784314);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8784313725);
+  }
+}
+@-moz-keyframes big-dark-glow {
+  from {
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.9960784314);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8784313725);
+  }
+}
+@-ms-keyframes big-dark-glow {
+  from {
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.9960784314);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8784313725);
+  }
+}
+@-o-keyframes big-dark-glow {
+  from {
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.9960784314);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8784313725);
+  }
+}
+@keyframes big-dark-glow {
+  from {
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.9960784314);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8784313725);
+  }
+}
+@-webkit-keyframes light-highlight-row {
+  from {
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.8784313725);
+    background-color: rgba(255, 255, 255, 0.65);
+    color: rgba(0, 0, 0, 0.9960784314);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.9960784314);
+    background-color: rgba(255, 255, 255, 0.7);
+    color: rgba(0, 0, 0, 0.8784313725);
+  }
+}
+@-khtml-keyframes light-highlight-row {
+  from {
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.8784313725);
+    background-color: rgba(255, 255, 255, 0.65);
+    color: rgba(0, 0, 0, 0.9960784314);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.9960784314);
+    background-color: rgba(255, 255, 255, 0.7);
+    color: rgba(0, 0, 0, 0.8784313725);
+  }
+}
+@-moz-keyframes light-highlight-row {
+  from {
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.8784313725);
+    background-color: rgba(255, 255, 255, 0.65);
+    color: rgba(0, 0, 0, 0.9960784314);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.9960784314);
+    background-color: rgba(255, 255, 255, 0.7);
+    color: rgba(0, 0, 0, 0.8784313725);
+  }
+}
+@-ms-keyframes light-highlight-row {
+  from {
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.8784313725);
+    background-color: rgba(255, 255, 255, 0.65);
+    color: rgba(0, 0, 0, 0.9960784314);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.9960784314);
+    background-color: rgba(255, 255, 255, 0.7);
+    color: rgba(0, 0, 0, 0.8784313725);
+  }
+}
+@-o-keyframes light-highlight-row {
+  from {
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.8784313725);
+    background-color: rgba(255, 255, 255, 0.65);
+    color: rgba(0, 0, 0, 0.9960784314);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.9960784314);
+    background-color: rgba(255, 255, 255, 0.7);
+    color: rgba(0, 0, 0, 0.8784313725);
+  }
+}
+@keyframes light-highlight-row {
+  from {
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.8784313725);
+    background-color: rgba(255, 255, 255, 0.65);
+    color: rgba(0, 0, 0, 0.9960784314);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.9960784314);
+    background-color: rgba(255, 255, 255, 0.7);
+    color: rgba(0, 0, 0, 0.8784313725);
+  }
+}
+@-webkit-keyframes dark-highlight-row {
+  from {
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.8784313725);
+    background-color: rgba(0, 0, 0, 0.65);
+    color: rgba(255, 255, 255, 0.9960784314);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.9960784314);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+}
+@-khtml-keyframes dark-highlight-row {
+  from {
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.8784313725);
+    background-color: rgba(0, 0, 0, 0.65);
+    color: rgba(255, 255, 255, 0.9960784314);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.9960784314);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+}
+@-moz-keyframes dark-highlight-row {
+  from {
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.8784313725);
+    background-color: rgba(0, 0, 0, 0.65);
+    color: rgba(255, 255, 255, 0.9960784314);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.9960784314);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+}
+@-ms-keyframes dark-highlight-row {
+  from {
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.8784313725);
+    background-color: rgba(0, 0, 0, 0.65);
+    color: rgba(255, 255, 255, 0.9960784314);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.9960784314);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+}
+@-o-keyframes dark-highlight-row {
+  from {
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.8784313725);
+    background-color: rgba(0, 0, 0, 0.65);
+    color: rgba(255, 255, 255, 0.9960784314);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.9960784314);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+}
+@keyframes dark-highlight-row {
+  from {
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.8784313725);
+    background-color: rgba(0, 0, 0, 0.65);
+    color: rgba(255, 255, 255, 0.9960784314);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.9960784314);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgba(255, 255, 255, 0.8784313725);
+  }
+}
